@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Requests\Backend\Access\User;
+namespace PaperStore\Http\Requests\Backend\Access\User;
 
-use App\Http\Requests\Request;
+use PaperStore\Http\Requests\Request;
 
 /**
  * Class StoreUserRequest
- * @package App\Http\Requests\Backend\Access\User
+ * @package PaperStore\Http\Requests\Backend\Access\User
  */
 class StoreUserRequest extends Request
 {

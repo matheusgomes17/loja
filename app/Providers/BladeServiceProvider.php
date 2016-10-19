@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Providers;
+namespace PaperStore\Providers;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
 /**
  * Class BladeServiceProvider
- * @package App\Providers
+ * @package PaperStore\Providers
  */
 class BladeServiceProvider extends ServiceProvider
 {

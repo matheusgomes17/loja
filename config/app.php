@@ -175,13 +175,13 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AccessServiceProvider::class,
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-		App\Providers\BladeServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\HistoryServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        PaperStore\Providers\AccessServiceProvider::class,
+        PaperStore\Providers\AppServiceProvider::class,
+        PaperStore\Providers\AuthServiceProvider::class,
+		PaperStore\Providers\BladeServiceProvider::class,
+        PaperStore\Providers\EventServiceProvider::class,
+        PaperStore\Providers\HistoryServiceProvider::class,
+        PaperStore\Providers\RouteServiceProvider::class,
 
         /*
          * Third Party Providers
@@ -198,11 +198,12 @@ return [
         Yajra\Datatables\DatatablesServiceProvider::class,
         Cviebrock\EloquentSluggable\ServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
 
         /*
          * Has to override the Collective\Html\HtmlServiceProvider form singleton
          */
-        App\Providers\MacroServiceProvider::class,
+        PaperStore\Providers\MacroServiceProvider::class,
     ],
 
     /*

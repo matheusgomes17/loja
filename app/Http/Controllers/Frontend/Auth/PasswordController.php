@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\Frontend\Auth;
+namespace PaperStore\Http\Controllers\Frontend\Auth;
 
-use App\Http\Controllers\Controller;
-use App\Services\Access\Traits\ChangePasswords;
-use App\Services\Access\Traits\ResetsPasswords;
-use App\Repositories\Frontend\Access\User\UserRepositoryContract;
+use PaperStore\Http\Controllers\Controller;
+use PaperStore\Services\Access\Traits\ChangePasswords;
+use PaperStore\Services\Access\Traits\ResetsPasswords;
+use PaperStore\Repositories\Frontend\Access\User\UserRepositoryContract;
 
 /**
  * Class PasswordController
- * @package App\Http\Controllers\Frontend\Auth
+ * @package PaperStore\Http\Controllers\Frontend\Auth
  */
 class PasswordController extends Controller
 {

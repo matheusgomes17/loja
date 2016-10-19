@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Http\Controllers\Backend\Access\Role;
+namespace PaperStore\Http\Controllers\Backend\Access\Role;
 
-use App\Models\Access\Role\Role;
-use App\Http\Controllers\Controller;
+use PaperStore\Models\Access\Role\Role;
+use PaperStore\Http\Controllers\Controller;
 use Yajra\Datatables\Facades\Datatables;
-use App\Http\Requests\Backend\Access\Role\StoreRoleRequest;
-use App\Http\Requests\Backend\Access\Role\ManageRoleRequest;
-use App\Http\Requests\Backend\Access\Role\UpdateRoleRequest;
-use App\Repositories\Backend\Access\Role\RoleRepositoryContract;
-use App\Repositories\Backend\Access\Permission\PermissionRepositoryContract;
+use PaperStore\Http\Requests\Backend\Access\Role\StoreRoleRequest;
+use PaperStore\Http\Requests\Backend\Access\Role\ManageRoleRequest;
+use PaperStore\Http\Requests\Backend\Access\Role\UpdateRoleRequest;
+use PaperStore\Repositories\Backend\Access\Role\RoleRepositoryContract;
+use PaperStore\Repositories\Backend\Access\Permission\PermissionRepositoryContract;
 
 /**
  * Class RoleController
- * @package App\Http\Controllers\Access
+ * @package PaperStore\Http\Controllers\Access
  */
 class RoleController extends Controller
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Language;
+namespace PaperStore\Http\Controllers\Language;
 
-use App\Http\Controllers\Controller;
+use PaperStore\Http\Controllers\Controller;
 
 /**
  * Class LanguageController
- * @package App\Http\Controllers
+ * @package PaperStore\Http\Controllers
  */
 class LanguageController extends Controller
 {

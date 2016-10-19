@@ -1,13 +1,13 @@
-<?php namespace App\Providers;
+<?php namespace PaperStore\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Repositories\Backend\History\HistoryContract;
-use App\Repositories\Backend\History\EloquentHistoryRepository;
-use App\Repositories\Backend\History\Facades\History as HistoryFacade;
+use PaperStore\Repositories\Backend\History\HistoryContract;
+use PaperStore\Repositories\Backend\History\EloquentHistoryRepository;
+use PaperStore\Repositories\Backend\History\Facades\History as HistoryFacade;
 
 /**
  * Class HistoryServiceProvider
- * @package App\Providers
+ * @package PaperStore\Providers
  */
 class HistoryServiceProvider extends ServiceProvider {
 

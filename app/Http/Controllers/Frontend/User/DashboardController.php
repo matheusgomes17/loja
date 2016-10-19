@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Frontend\User;
+namespace PaperStore\Http\Controllers\Frontend\User;
 
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use PaperStore\Http\Requests;
+use PaperStore\Http\Controllers\Controller;
 
 /**
  * Class DashboardController
- * @package App\Http\Controllers\Frontend
+ * @package PaperStore\Http\Controllers\Frontend
  */
 class DashboardController extends Controller
 {

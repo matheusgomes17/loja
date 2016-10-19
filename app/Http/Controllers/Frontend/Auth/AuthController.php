@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Http\Controllers\Frontend\Auth;
+namespace PaperStore\Http\Controllers\Frontend\Auth;
 
-use App\Http\Controllers\Controller;
-use App\Services\Access\Traits\ConfirmUsers;
-use App\Services\Access\Traits\UseSocialite;
+use PaperStore\Http\Controllers\Controller;
+use PaperStore\Services\Access\Traits\ConfirmUsers;
+use PaperStore\Services\Access\Traits\UseSocialite;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
-use App\Services\Access\Traits\AuthenticatesAndRegistersUsers;
-use App\Repositories\Frontend\Access\User\UserRepositoryContract;
+use PaperStore\Services\Access\Traits\AuthenticatesAndRegistersUsers;
+use PaperStore\Repositories\Frontend\Access\User\UserRepositoryContract;
 
 /**
  * Class AuthController
- * @package App\Http\Controllers\Frontend\Auth
+ * @package PaperStore\Http\Controllers\Frontend\Auth
  */
 class AuthController extends Controller
 {

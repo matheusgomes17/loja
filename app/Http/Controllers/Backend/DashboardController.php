@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Backend;
+namespace PaperStore\Http\Controllers\Backend;
 
-use App\Http\Controllers\Controller;
+use PaperStore\Http\Controllers\Controller;
 
 /**
  * Class DashboardController
- * @package App\Http\Controllers\Backend
+ * @package PaperStore\Http\Controllers\Backend
  */
 class DashboardController extends Controller
 {

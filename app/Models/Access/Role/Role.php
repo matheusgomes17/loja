@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Models\Access\Role;
+namespace PaperStore\Models\Access\Role;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Access\Role\Traits\RoleAccess;
-use App\Models\Access\Role\Traits\Attribute\RoleAttribute;
-use App\Models\Access\Role\Traits\Relationship\RoleRelationship;
+use PaperStore\Models\Access\Role\Traits\RoleAccess;
+use PaperStore\Models\Access\Role\Traits\Attribute\RoleAttribute;
+use PaperStore\Models\Access\Role\Traits\Relationship\RoleRelationship;
 
 /**
  * Class Role
- * @package App\Models\Access\Role
+ * @package PaperStore\Models\Access\Role
  */
 class Role extends Model
 {

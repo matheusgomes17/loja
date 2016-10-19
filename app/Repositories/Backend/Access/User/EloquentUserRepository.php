@@ -1,25 +1,25 @@
 <?php
 
-namespace App\Repositories\Backend\Access\User;
+namespace PaperStore\Repositories\Backend\Access\User;
 
-use App\Models\Access\User\User;
+use PaperStore\Models\Access\User\User;
 use Illuminate\Support\Facades\DB;
-use App\Exceptions\GeneralException;
-use App\Events\Backend\Access\User\UserCreated;
-use App\Events\Backend\Access\User\UserUpdated;
-use App\Events\Backend\Access\User\UserDeleted;
-use App\Events\Backend\Access\User\UserRestored;
-use App\Events\Backend\Access\User\UserDeactivated;
-use App\Events\Backend\Access\User\UserReactivated;
-use App\Events\Backend\Access\User\UserPasswordChanged;
-use App\Events\Backend\Access\User\UserPermanentlyDeleted;
-use App\Exceptions\Backend\Access\User\UserNeedsRolesException;
-use App\Repositories\Backend\Access\Role\RoleRepositoryContract;
-use App\Repositories\Frontend\Access\User\UserRepositoryContract as FrontendUserRepositoryContract;
+use PaperStore\Exceptions\GeneralException;
+use PaperStore\Events\Backend\Access\User\UserCreated;
+use PaperStore\Events\Backend\Access\User\UserUpdated;
+use PaperStore\Events\Backend\Access\User\UserDeleted;
+use PaperStore\Events\Backend\Access\User\UserRestored;
+use PaperStore\Events\Backend\Access\User\UserDeactivated;
+use PaperStore\Events\Backend\Access\User\UserReactivated;
+use PaperStore\Events\Backend\Access\User\UserPasswordChanged;
+use PaperStore\Events\Backend\Access\User\UserPermanentlyDeleted;
+use PaperStore\Exceptions\Backend\Access\User\UserNeedsRolesException;
+use PaperStore\Repositories\Backend\Access\Role\RoleRepositoryContract;
+use PaperStore\Repositories\Frontend\Access\User\UserRepositoryContract as FrontendUserRepositoryContract;
 
 /**
  * Class EloquentUserRepository
- * @package App\Repositories\User
+ * @package PaperStore\Repositories\User
  */
 class EloquentUserRepository implements UserRepositoryContract
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Services\Access\Traits;
+namespace PaperStore\Services\Access\Traits;
 
-use App\Events\Frontend\Auth\UserRegistered;
-use App\Http\Requests\Frontend\Auth\RegisterRequest;
+use PaperStore\Events\Frontend\Auth\UserRegistered;
+use PaperStore\Http\Requests\Frontend\Auth\RegisterRequest;
 
 /**
  * Class RegistersUsers
- * @package App\Services\Access\Traits
+ * @package PaperStore\Services\Access\Traits
  */
 trait RegistersUsers
 {

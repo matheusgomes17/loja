@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Providers;
+namespace PaperStore\Providers;
 
-use App\Services\Access\Access;
+use PaperStore\Services\Access\Access;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
 /**
  * Class AccessServiceProvider
- * @package App\Providers
+ * @package PaperStore\Providers
  */
 class AccessServiceProvider extends ServiceProvider
 {
@@ -60,7 +60,7 @@ class AccessServiceProvider extends ServiceProvider
     {
         $this->app->booting(function () {
             $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('Access', \App\Services\Access\Facades\Access::class);
+            $loader->alias('Access', \PaperStore\Services\Access\Facades\Access::class);
         });
     }
 
@@ -70,23 +70,23 @@ class AccessServiceProvider extends ServiceProvider
     public function registerBindings()
     {
         $this->app->bind(
-            \App\Repositories\Frontend\Access\User\UserRepositoryContract::class,
-            \App\Repositories\Frontend\Access\User\EloquentUserRepository::class
+            \PaperStore\Repositories\Frontend\Access\User\UserRepositoryContract::class,
+            \PaperStore\Repositories\Frontend\Access\User\EloquentUserRepository::class
         );
 
         $this->app->bind(
-            \App\Repositories\Backend\Access\User\UserRepositoryContract::class,
-            \App\Repositories\Backend\Access\User\EloquentUserRepository::class
+            \PaperStore\Repositories\Backend\Access\User\UserRepositoryContract::class,
+            \PaperStore\Repositories\Backend\Access\User\EloquentUserRepository::class
         );
 
         $this->app->bind(
-            \App\Repositories\Backend\Access\Role\RoleRepositoryContract::class,
-            \App\Repositories\Backend\Access\Role\EloquentRoleRepository::class
+            \PaperStore\Repositories\Backend\Access\Role\RoleRepositoryContract::class,
+            \PaperStore\Repositories\Backend\Access\Role\EloquentRoleRepository::class
         );
 
         $this->app->bind(
-            \App\Repositories\Backend\Access\Permission\PermissionRepositoryContract::class,
-            \App\Repositories\Backend\Access\Permission\EloquentPermissionRepository::class
+            \PaperStore\Repositories\Backend\Access\Permission\PermissionRepositoryContract::class,
+            \PaperStore\Repositories\Backend\Access\Permission\EloquentPermissionRepository::class
         );
     }
 

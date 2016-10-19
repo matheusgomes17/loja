@@ -12,7 +12,7 @@ Route::group(['namespace' => 'Auth'], function () {
         Route::get('logout', 'AuthController@logout')->name('auth.logout');
 
         //For when admin is logged in as user from backend
-        Route::get('logout-as', '\App\Http\Controllers\Backend\Access\User\UserController@logoutAs')->name('auth.logout-as');
+        Route::get('logout-as', '\PaperStore\Http\Controllers\Backend\Access\User\UserController@logoutAs')->name('auth.logout-as');
 
         // Change Password Routes
         Route::get('password/change', 'PasswordController@showChangePasswordForm')->name('auth.password.change');

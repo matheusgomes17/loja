@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Frontend;
+namespace PaperStore\Http\Controllers\Frontend;
 
-use App\Http\Controllers\Controller;
+use PaperStore\Http\Controllers\Controller;
 
 /**
  * Class FrontendController
- * @package App\Http\Controllers
+ * @package PaperStore\Http\Controllers
  */
 class FrontendController extends Controller
 {

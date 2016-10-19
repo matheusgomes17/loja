@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exceptions;
+namespace PaperStore\Exceptions;
 
 use Exception;
 use Illuminate\Validation\ValidationException;
@@ -8,12 +8,12 @@ use Illuminate\Session\TokenMismatchException;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
-use App\Exceptions\Backend\Access\User\UserNeedsRolesException;
+use PaperStore\Exceptions\Backend\Access\User\UserNeedsRolesException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 /**
  * Class Handler
- * @package App\Exceptions
+ * @package PaperStore\Exceptions
  */
 class Handler extends ExceptionHandler
 {

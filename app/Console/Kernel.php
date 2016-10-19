@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Console;
+namespace PaperStore\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
 /**
  * Class Kernel
- * @package App\Console
+ * @package PaperStore\Console
  */
 class Kernel extends ConsoleKernel
 {

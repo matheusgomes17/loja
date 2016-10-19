@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Services\Access;
+namespace PaperStore\Services\Access;
 
 /**
  * Class Access
- * @package App\Services\Access
+ * @package PaperStore\Services\Access
  */
 class Access
 {

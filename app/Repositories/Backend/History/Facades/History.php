@@ -1,4 +1,4 @@
-<?php namespace App\Repositories\Backend\History\Facades;
+<?php namespace PaperStore\Repositories\Backend\History\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Events;
+namespace PaperStore\Events;
 
 /**
  * Class Event
- * @package App\Events
+ * @package PaperStore\Events
  */
 abstract class Event
 {

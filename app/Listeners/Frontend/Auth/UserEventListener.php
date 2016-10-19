@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Listeners\Frontend\Auth;
+namespace PaperStore\Listeners\Frontend\Auth;
 
 /**
  * Class UserEventListener
- * @package App\Listeners\Frontend\Auth
+ * @package PaperStore\Listeners\Frontend\Auth
  */
 class UserEventListener
 {
@@ -45,23 +45,23 @@ class UserEventListener
 	public function subscribe($events)
 	{
 		$events->listen(
-			\App\Events\Frontend\Auth\UserLoggedIn::class,
-			'App\Listeners\Frontend\Auth\UserEventListener@onLoggedIn'
+			\PaperStore\Events\Frontend\Auth\UserLoggedIn::class,
+			'PaperStore\Listeners\Frontend\Auth\UserEventListener@onLoggedIn'
 		);
 
 		$events->listen(
-			\App\Events\Frontend\Auth\UserLoggedOut::class,
-			'App\Listeners\Frontend\Auth\UserEventListener@onLoggedOut'
+			\PaperStore\Events\Frontend\Auth\UserLoggedOut::class,
+			'PaperStore\Listeners\Frontend\Auth\UserEventListener@onLoggedOut'
 		);
 
 		$events->listen(
-			\App\Events\Frontend\Auth\UserRegistered::class,
-			'App\Listeners\Frontend\Auth\UserEventListener@onRegistered'
+			\PaperStore\Events\Frontend\Auth\UserRegistered::class,
+			'PaperStore\Listeners\Frontend\Auth\UserEventListener@onRegistered'
 		);
 
 		$events->listen(
-			\App\Events\Frontend\Auth\UserConfirmed::class,
-			'App\Listeners\Frontend\Auth\UserEventListener@onConfirmed'
+			\PaperStore\Events\Frontend\Auth\UserConfirmed::class,
+			'PaperStore\Listeners\Frontend\Auth\UserEventListener@onConfirmed'
 		);
 	}
 }

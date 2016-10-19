@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Services\Access\Traits;
+namespace PaperStore\Services\Access\Traits;
 
 use Illuminate\Http\Request;
 use Illuminate\Cache\RateLimiter;
-use App\Exceptions\GeneralException;
-use App\Events\Frontend\Auth\UserLoggedIn;
-use App\Events\Frontend\Auth\UserLoggedOut;
+use PaperStore\Exceptions\GeneralException;
+use PaperStore\Events\Frontend\Auth\UserLoggedIn;
+use PaperStore\Events\Frontend\Auth\UserLoggedOut;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
-use App\Http\Requests\Frontend\Auth\LoginRequest;
-use App\Repositories\Backend\Access\User\UserRepositoryContract;
+use PaperStore\Http\Requests\Frontend\Auth\LoginRequest;
+use PaperStore\Repositories\Backend\Access\User\UserRepositoryContract;
 
 /**
  * Class AuthenticatesUsers
- * @package App\Services\Access\Traits
+ * @package PaperStore\Services\Access\Traits
  */
 trait AuthenticatesUsers
 {

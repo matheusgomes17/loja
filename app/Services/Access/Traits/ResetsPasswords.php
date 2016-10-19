@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Services\Access\Traits;
+namespace PaperStore\Services\Access\Traits;
 
 use Illuminate\Mail\Message;
 use Illuminate\Support\Facades\Password;
-use App\Http\Requests\Frontend\Auth\ResetPasswordRequest;
-use App\Http\Requests\Frontend\Auth\SendResetLinkEmailRequest;
+use PaperStore\Http\Requests\Frontend\Auth\ResetPasswordRequest;
+use PaperStore\Http\Requests\Frontend\Auth\SendResetLinkEmailRequest;
 
 /**
  * Class ResetsPasswords
- * @package App\Services\Access\Traits
+ * @package PaperStore\Services\Access\Traits
  */
 trait ResetsPasswords
 {

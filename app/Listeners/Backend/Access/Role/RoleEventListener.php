@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Listeners\Backend\Access\Role;
+namespace PaperStore\Listeners\Backend\Access\Role;
 
 /**
  * Class RoleEventListener
- * @package App\Listeners\Backend\Access\Role
+ * @package PaperStore\Listeners\Backend\Access\Role
  */
 class RoleEventListener
 {
@@ -60,18 +60,18 @@ class RoleEventListener
 	public function subscribe($events)
 	{
 		$events->listen(
-			\App\Events\Backend\Access\Role\RoleCreated::class,
-			'App\Listeners\Backend\Access\Role\RoleEventListener@onCreated'
+			\PaperStore\Events\Backend\Access\Role\RoleCreated::class,
+			'PaperStore\Listeners\Backend\Access\Role\RoleEventListener@onCreated'
 		);
 
 		$events->listen(
-			\App\Events\Backend\Access\Role\RoleUpdated::class,
-			'App\Listeners\Backend\Access\Role\RoleEventListener@onUpdated'
+			\PaperStore\Events\Backend\Access\Role\RoleUpdated::class,
+			'PaperStore\Listeners\Backend\Access\Role\RoleEventListener@onUpdated'
 		);
 
 		$events->listen(
-			\App\Events\Backend\Access\Role\RoleDeleted::class,
-			'App\Listeners\Backend\Access\Role\RoleEventListener@onDeleted'
+			\PaperStore\Events\Backend\Access\Role\RoleDeleted::class,
+			'PaperStore\Listeners\Backend\Access\Role\RoleEventListener@onDeleted'
 		);
 	}
 }

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace PaperStore\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;
 
 /**
  * Class VerifyCsrfToken
- * @package App\Http\Middleware
+ * @package PaperStore\Http\Middleware
  */
 class VerifyCsrfToken extends BaseVerifier
 {

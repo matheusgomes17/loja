@@ -1,6 +1,6 @@
-<?php namespace App\Models\History;
+<?php namespace PaperStore\Models\History;
 
-use App\Models\Access\User\User;
+use PaperStore\Models\Access\User\User;
 use Illuminate\Database\Eloquent\Model;
 
 /**

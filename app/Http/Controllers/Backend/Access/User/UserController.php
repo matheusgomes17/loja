@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Http\Controllers\Backend\Access\User;
+namespace PaperStore\Http\Controllers\Backend\Access\User;
 
-use App\Models\Access\User\User;
-use App\Http\Controllers\Controller;
+use PaperStore\Models\Access\User\User;
+use PaperStore\Http\Controllers\Controller;
 use Yajra\Datatables\Facades\Datatables;
-use App\Http\Requests\Backend\Access\User\StoreUserRequest;
-use App\Http\Requests\Backend\Access\User\ManageUserRequest;
-use App\Http\Requests\Backend\Access\User\UpdateUserRequest;
-use App\Repositories\Backend\Access\User\UserRepositoryContract;
-use App\Repositories\Backend\Access\Role\RoleRepositoryContract;
-use App\Http\Requests\Backend\Access\User\UpdateUserPasswordRequest;
-use App\Repositories\Frontend\Access\User\UserRepositoryContract as FrontendUserRepositoryContract;
+use PaperStore\Http\Requests\Backend\Access\User\StoreUserRequest;
+use PaperStore\Http\Requests\Backend\Access\User\ManageUserRequest;
+use PaperStore\Http\Requests\Backend\Access\User\UpdateUserRequest;
+use PaperStore\Repositories\Backend\Access\User\UserRepositoryContract;
+use PaperStore\Repositories\Backend\Access\Role\RoleRepositoryContract;
+use PaperStore\Http\Requests\Backend\Access\User\UpdateUserPasswordRequest;
+use PaperStore\Repositories\Frontend\Access\User\UserRepositoryContract as FrontendUserRepositoryContract;
 
 /**
  * Class UserController

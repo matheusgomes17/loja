@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Repositories\Backend\Access\User;
+namespace PaperStore\Repositories\Backend\Access\User;
 
-use App\Models\Access\User\User;
+use PaperStore\Models\Access\User\User;
 
 /**
  * Interface UserRepositoryContract
- * @package App\Repositories\User
+ * @package PaperStore\Repositories\User
  */
 interface UserRepositoryContract
 {

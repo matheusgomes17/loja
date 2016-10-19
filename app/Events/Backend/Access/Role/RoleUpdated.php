@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Events\Backend\Access\Role;
+namespace PaperStore\Events\Backend\Access\Role;
 
-use App\Events\Event;
+use PaperStore\Events\Event;
 use Illuminate\Queue\SerializesModels;
 
 /**
  * Class RoleUpdated
- * @package App\Events\Backend\Access\Role
+ * @package PaperStore\Events\Backend\Access\Role
  */
 class RoleUpdated extends Event
 {

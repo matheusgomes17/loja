@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Requests\Frontend\Auth;
+namespace PaperStore\Http\Requests\Frontend\Auth;
 
-use App\Http\Requests\Request;
+use PaperStore\Http\Requests\Request;
 
 /**
  * Class SendResetLinkEmailRequest
- * @package App\Http\Requests\Frontend\Access
+ * @package PaperStore\Http\Requests\Frontend\Access
  */
 class SendResetLinkEmailRequest extends Request
 {

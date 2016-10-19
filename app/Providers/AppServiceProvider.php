@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace PaperStore\Providers;
 
 use Carbon\Carbon;
 use Illuminate\Support\ServiceProvider;

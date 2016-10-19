@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http;
+namespace PaperStore\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 /**
  * Class Kernel
- * @package App\Http
+ * @package PaperStore\Http
  */
 class Kernel extends HttpKernel
 {
@@ -28,12 +28,12 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
-            \App\Http\Middleware\EncryptCookies::class,
+            \PaperStore\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \App\Http\Middleware\VerifyCsrfToken::class,
-            \App\Http\Middleware\LocaleMiddleware::class,
+            \PaperStore\Http\Middleware\VerifyCsrfToken::class,
+            \PaperStore\Http\Middleware\LocaleMiddleware::class,
         ],
 
         'admin' => [
@@ -56,17 +56,17 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \App\Http\Middleware\Authenticate::class,
+        'auth' => \PaperStore\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
-        'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+        'guest' => \PaperStore\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-        'timeout' => \App\Http\Middleware\SessionTimeout::class,
+        'timeout' => \PaperStore\Http\Middleware\SessionTimeout::class,
 
         /**
          * Access Middleware
          */
-        'access.routeNeedsRole' => \App\Http\Middleware\RouteNeedsRole::class,
-        'access.routeNeedsPermission' => \App\Http\Middleware\RouteNeedsPermission::class,
+        'access.routeNeedsRole' => \PaperStore\Http\Middleware\RouteNeedsRole::class,
+        'access.routeNeedsPermission' => \PaperStore\Http\Middleware\RouteNeedsPermission::class,
     ];
 }

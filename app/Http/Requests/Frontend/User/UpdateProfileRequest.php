@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Requests\Frontend\User;
+namespace PaperStore\Http\Requests\Frontend\User;
 
-use App\Http\Requests\Request;
+use PaperStore\Http\Requests\Request;
 
 /**
  * Class UpdateProfileRequest
- * @package App\Http\Requests\Frontend\User
+ * @package PaperStore\Http\Requests\Frontend\User
  */
 class UpdateProfileRequest extends Request
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Models\Access\User\Traits\Relationship;
+namespace PaperStore\Models\Access\User\Traits\Relationship;
 
-use App\Models\Access\User\SocialLogin;
+use PaperStore\Models\Access\User\SocialLogin;
 
 /**
  * Class UserRelationship
- * @package App\Models\Access\User\Traits\Relationship
+ * @package PaperStore\Models\Access\User\Traits\Relationship
  */
 trait UserRelationship
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace PaperStore\Http\Middleware;
 
 use Closure;
 use Illuminate\Session\Store;
 
 /**
  * Class SessionTimeout
- * @package App\Http\Middleware
+ * @package PaperStore\Http\Middleware
  */
 class SessionTimeout {
 

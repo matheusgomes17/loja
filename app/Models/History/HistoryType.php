@@ -1,4 +1,4 @@
-<?php namespace App\Models\History;
+<?php namespace PaperStore\Models\History;
 
 use Illuminate\Database\Eloquent\Model;
 

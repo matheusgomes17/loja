@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Console\Commands;
+namespace PaperStore\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;
 
 /**
  * Class Inspire
- * @package App\Console\Commands
+ * @package PaperStore\Console\Commands
  */
 class Inspire extends Command
 {

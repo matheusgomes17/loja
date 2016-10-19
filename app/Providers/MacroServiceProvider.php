@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Providers;
+namespace PaperStore\Providers;
 
-use App\Services\Macros\Macros;
+use PaperStore\Services\Macros\Macros;
 use Collective\Html\HtmlServiceProvider;
 
 /**
  * Class MacroServiceProvider
- * @package App\Providers
+ * @package PaperStore\Providers
  */
 class MacroServiceProvider extends HtmlServiceProvider
 {

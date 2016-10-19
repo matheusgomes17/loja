@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Repositories\Backend\Access\Permission;
+namespace PaperStore\Repositories\Backend\Access\Permission;
 
-use App\Models\Access\Permission\Permission;
+use PaperStore\Models\Access\Permission\Permission;
 
 /**
  * Class EloquentPermissionRepository
- * @package App\Repositories\Permission
+ * @package PaperStore\Repositories\Permission
  */
 class EloquentPermissionRepository implements PermissionRepositoryContract
 {

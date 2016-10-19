@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Models\Access\User;
+namespace PaperStore\Models\Access\User;
 
-use App\Models\Access\User\Traits\UserAccess;
+use PaperStore\Models\Access\User\Traits\UserAccess;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use App\Models\Access\User\Traits\Attribute\UserAttribute;
-use App\Models\Access\User\Traits\Relationship\UserRelationship;
+use PaperStore\Models\Access\User\Traits\Attribute\UserAttribute;
+use PaperStore\Models\Access\User\Traits\Relationship\UserRelationship;
 
 /**
  * Class User
- * @package App\Models\Access\User
+ * @package PaperStore\Models\Access\User
  */
 class User extends Authenticatable
 {

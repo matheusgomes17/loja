@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Repositories\Backend\Access\Permission;
+namespace PaperStore\Repositories\Backend\Access\Permission;
 
 /**
  * Interface PermissionRepositoryContract
- * @package App\Repositories\Permission
+ * @package PaperStore\Repositories\Permission
  */
 interface PermissionRepositoryContract
 {

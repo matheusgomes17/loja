@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Services\Macros;
+namespace PaperStore\Services\Macros;
 
 /**
  * Class Dropdowns
- * @package App\Services\Macros
+ * @package PaperStore\Services\Macros
  */
 trait Dropdowns
 {

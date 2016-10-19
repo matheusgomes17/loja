@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Services\Access\Traits;
+namespace PaperStore\Services\Access\Traits;
 
-use App\Http\Requests\Frontend\User\ChangePasswordRequest;
+use PaperStore\Http\Requests\Frontend\User\ChangePasswordRequest;
 
 /**
  * Class ChangePasswords
- * @package App\Services\Access\Traits
+ * @package PaperStore\Services\Access\Traits
  */
 trait ChangePasswords
 {

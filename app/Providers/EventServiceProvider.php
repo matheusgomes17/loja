@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace PaperStore\Providers;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -28,7 +28,7 @@ class EventServiceProvider extends ServiceProvider
 		/**
 		 * Auth Subscribers
 		 */
-		\App\Listeners\Frontend\Auth\UserEventListener::class,
+		\PaperStore\Listeners\Frontend\Auth\UserEventListener::class,
 
 		/**
 		 * Backend Subscribers
@@ -37,8 +37,8 @@ class EventServiceProvider extends ServiceProvider
 		/**
 		 * Access Subscribers
 		 */
-        \App\Listeners\Backend\Access\User\UserEventListener::class,
-		\App\Listeners\Backend\Access\Role\RoleEventListener::class,
+        \PaperStore\Listeners\Backend\Access\User\UserEventListener::class,
+		\PaperStore\Listeners\Backend\Access\Role\RoleEventListener::class,
     ];
 
     /**

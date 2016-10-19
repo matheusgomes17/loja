@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Services\Access\Traits;
+namespace PaperStore\Services\Access\Traits;
 
 /**
  * Class AuthenticatesAndRegistersUsers
- * @package App\Services\Access\Traits
+ * @package PaperStore\Services\Access\Traits
  */
 trait AuthenticatesAndRegistersUsers
 {

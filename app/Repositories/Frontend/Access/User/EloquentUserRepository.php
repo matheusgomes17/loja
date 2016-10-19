@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Repositories\Frontend\Access\User;
+namespace PaperStore\Repositories\Frontend\Access\User;
 
-use App\Models\Access\User\User;
+use PaperStore\Models\Access\User\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
-use App\Exceptions\GeneralException;
+use PaperStore\Exceptions\GeneralException;
 use Illuminate\Support\Facades\Hash;
-use App\Models\Access\User\SocialLogin;
-use App\Events\Frontend\Auth\UserConfirmed;
-use App\Repositories\Backend\Access\Role\RoleRepositoryContract;
+use PaperStore\Models\Access\User\SocialLogin;
+use PaperStore\Events\Frontend\Auth\UserConfirmed;
+use PaperStore\Repositories\Backend\Access\Role\RoleRepositoryContract;
 
 /**
  * Class EloquentUserRepository
- * @package App\Repositories\Frontend\User
+ * @package PaperStore\Repositories\Frontend\User
  */
 class EloquentUserRepository implements UserRepositoryContract
 {

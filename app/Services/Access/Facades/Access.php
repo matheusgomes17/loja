@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Services\Access\Facades;
+namespace PaperStore\Services\Access\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class Access
- * @package App\Services\Access\Facades
+ * @package PaperStore\Services\Access\Facades
  */
 class Access extends Facade
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Services\Access\Traits;
+namespace PaperStore\Services\Access\Traits;
 
 use Illuminate\Http\Request;
-use App\Exceptions\GeneralException;
+use PaperStore\Exceptions\GeneralException;
 use Laravel\Socialite\Facades\Socialite;
-use App\Events\Frontend\Auth\UserLoggedIn;
+use PaperStore\Events\Frontend\Auth\UserLoggedIn;
 
 /**
  * Class UseSocialite
- * @package App\Services\Access\Traits
+ * @package PaperStore\Services\Access\Traits
  */
 trait UseSocialite
 {

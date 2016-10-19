@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Services\Macros;
+namespace PaperStore\Services\Macros;
 
 use Collective\Html\FormBuilder;
 
 /**
  * Class Macros
- * @package App\Http
+ * @package PaperStore\Http
  */
 class Macros extends FormBuilder
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace PaperStore\Http\Middleware;
 
 use Closure;
 
 /**
  * Class RouteNeedsRole
- * @package App\Http\Middleware
+ * @package PaperStore\Http\Middleware
  */
 class RouteNeedsPermission
 {

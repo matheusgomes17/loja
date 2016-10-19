@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Events\Backend\Access\User;
+namespace PaperStore\Events\Backend\Access\User;
 
-use App\Events\Event;
+use PaperStore\Events\Event;
 use Illuminate\Queue\SerializesModels;
 
 /**
  * Class UserReactivated
- * @package App\Events\Backend\Access\User
+ * @package PaperStore\Events\Backend\Access\User
  */
 class UserReactivated extends Event
 {

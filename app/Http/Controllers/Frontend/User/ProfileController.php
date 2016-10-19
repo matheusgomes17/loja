@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\Frontend\User;
+namespace PaperStore\Http\Controllers\Frontend\User;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Frontend\User\UpdateProfileRequest;
-use App\Repositories\Frontend\Access\User\UserRepositoryContract;
+use PaperStore\Http\Controllers\Controller;
+use PaperStore\Http\Requests\Frontend\User\UpdateProfileRequest;
+use PaperStore\Repositories\Frontend\Access\User\UserRepositoryContract;
 
 /**
  * Class ProfileController
- * @package App\Http\Controllers\Frontend
+ * @package PaperStore\Http\Controllers\Frontend
  */
 class ProfileController extends Controller
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace PaperStore\Http\Middleware;
 
 use Closure;
 use Carbon\Carbon;
 
 /**
  * Class LocaleMiddleware
- * @package App\Http\Middleware
+ * @package PaperStore\Http\Middleware
  */
 class LocaleMiddleware
 {

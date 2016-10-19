@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Exceptions;
+namespace PaperStore\Exceptions;
 
 use Exception;
 
 /**
  * Class GeneralException
- * @package App\Exceptions
+ * @package PaperStore\Exceptions
  */
 class GeneralException extends Exception {}

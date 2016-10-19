@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models\Access\Permission\Traits\Relationship;
+namespace PaperStore\Models\Access\Permission\Traits\Relationship;
 
 /**
  * Class PermissionRelationship
- * @package App\Models\Access\Permission\Traits\Relationship
+ * @package PaperStore\Models\Access\Permission\Traits\Relationship
  */
 trait PermissionRelationship
 {

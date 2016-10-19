@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Requests\Backend\Access\Role;
+namespace PaperStore\Http\Requests\Backend\Access\Role;
 
-use App\Http\Requests\Request;
+use PaperStore\Http\Requests\Request;
 
 /**
  * Class ManageRoleRequest
- * @package App\Http\Requests\Backend\Access\Role
+ * @package PaperStore\Http\Requests\Backend\Access\Role
  */
 class ManageRoleRequest extends Request
 {

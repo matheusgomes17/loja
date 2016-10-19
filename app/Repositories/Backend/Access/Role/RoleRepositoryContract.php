@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repositories\Backend\Access\Role;
+namespace PaperStore\Repositories\Backend\Access\Role;
 
-use App\Models\Access\Role\Role;
+use PaperStore\Models\Access\Role\Role;
 
 /**
  * Interface RoleRepositoryContract

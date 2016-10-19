@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Listeners\Backend\Access\User;
+namespace PaperStore\Listeners\Backend\Access\User;
 
 /**
  * Class UserEventListener
- * @package App\Listeners\Backend\Access\User
+ * @package PaperStore\Listeners\Backend\Access\User
  */
 class UserEventListener
 {
@@ -125,43 +125,43 @@ class UserEventListener
 	public function subscribe($events)
 	{
 		$events->listen(
-			\App\Events\Backend\Access\User\UserCreated::class,
-			'App\Listeners\Backend\Access\User\UserEventListener@onCreated'
+			\PaperStore\Events\Backend\Access\User\UserCreated::class,
+			'PaperStore\Listeners\Backend\Access\User\UserEventListener@onCreated'
 		);
 
 		$events->listen(
-			\App\Events\Backend\Access\User\UserUpdated::class,
-			'App\Listeners\Backend\Access\User\UserEventListener@onUpdated'
+			\PaperStore\Events\Backend\Access\User\UserUpdated::class,
+			'PaperStore\Listeners\Backend\Access\User\UserEventListener@onUpdated'
 		);
 
 		$events->listen(
-			\App\Events\Backend\Access\User\UserDeleted::class,
-			'App\Listeners\Backend\Access\User\UserEventListener@onDeleted'
+			\PaperStore\Events\Backend\Access\User\UserDeleted::class,
+			'PaperStore\Listeners\Backend\Access\User\UserEventListener@onDeleted'
 		);
 
 		$events->listen(
-			\App\Events\Backend\Access\User\UserRestored::class,
-			'App\Listeners\Backend\Access\User\UserEventListener@onRestored'
+			\PaperStore\Events\Backend\Access\User\UserRestored::class,
+			'PaperStore\Listeners\Backend\Access\User\UserEventListener@onRestored'
 		);
 
 		$events->listen(
-			\App\Events\Backend\Access\User\UserPermanentlyDeleted::class,
-			'App\Listeners\Backend\Access\User\UserEventListener@onPermanentlyDeleted'
+			\PaperStore\Events\Backend\Access\User\UserPermanentlyDeleted::class,
+			'PaperStore\Listeners\Backend\Access\User\UserEventListener@onPermanentlyDeleted'
 		);
 
 		$events->listen(
-			\App\Events\Backend\Access\User\UserPasswordChanged::class,
-			'App\Listeners\Backend\Access\User\UserEventListener@onPasswordChanged'
+			\PaperStore\Events\Backend\Access\User\UserPasswordChanged::class,
+			'PaperStore\Listeners\Backend\Access\User\UserEventListener@onPasswordChanged'
 		);
 
 		$events->listen(
-			\App\Events\Backend\Access\User\UserDeactivated::class,
-			'App\Listeners\Backend\Access\User\UserEventListener@onDeactivated'
+			\PaperStore\Events\Backend\Access\User\UserDeactivated::class,
+			'PaperStore\Listeners\Backend\Access\User\UserEventListener@onDeactivated'
 		);
 
 		$events->listen(
-			\App\Events\Backend\Access\User\UserReactivated::class,
-			'App\Listeners\Backend\Access\User\UserEventListener@onReactivated'
+			\PaperStore\Events\Backend\Access\User\UserReactivated::class,
+			'PaperStore\Listeners\Backend\Access\User\UserEventListener@onReactivated'
 		);
 	}
 }

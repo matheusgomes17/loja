@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Models\Access\User;
+namespace PaperStore\Models\Access\User;
 
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class SocialLogin
- * @package App\Models\Access\User
+ * @package PaperStore\Models\Access\User
  */
 class SocialLogin extends Model
 {

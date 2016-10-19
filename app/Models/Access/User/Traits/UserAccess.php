@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models\Access\User\Traits;
+namespace PaperStore\Models\Access\User\Traits;
 
 /**
  * Class UserAccess
- * @package App\Models\Access\User\Traits
+ * @package PaperStore\Models\Access\User\Traits
  */
 trait UserAccess
 {

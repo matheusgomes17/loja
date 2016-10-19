@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Access\Traits;
+namespace PaperStore\Services\Access\Traits;
 
 trait RedirectsUsers
 {

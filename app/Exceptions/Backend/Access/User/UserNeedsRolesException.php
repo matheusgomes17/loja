@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Exceptions\Backend\Access\User;
+namespace PaperStore\Exceptions\Backend\Access\User;
 
 use Exception;
 
 /**
  * Class UserNeedsRolesException
- * @package App\Exceptions\Access
+ * @package PaperStore\Exceptions\Access
  */
 class UserNeedsRolesException extends Exception
 {

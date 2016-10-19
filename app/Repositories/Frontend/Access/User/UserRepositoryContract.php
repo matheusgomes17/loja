@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Repositories\Frontend\Access\User;
+namespace PaperStore\Repositories\Frontend\Access\User;
 
 /**
  * Interface UserRepositoryContract
- * @package App\Repositories\Frontend\User
+ * @package PaperStore\Repositories\Frontend\User
  */
 interface UserRepositoryContract
 {

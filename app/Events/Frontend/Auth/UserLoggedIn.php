@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Events\Frontend\Auth;
+namespace PaperStore\Events\Frontend\Auth;
 
-use App\Events\Event;
+use PaperStore\Events\Event;
 use Illuminate\Queue\SerializesModels;
 
 /**
  * Class UserLoggedIn
- * @package App\Events\Frontend\Auth
+ * @package PaperStore\Events\Frontend\Auth
  */
 class UserLoggedIn extends Event
 {

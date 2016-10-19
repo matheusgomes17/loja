@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Models\Access\Permission;
+namespace PaperStore\Models\Access\Permission;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Access\Permission\Traits\Relationship\PermissionRelationship;
+use PaperStore\Models\Access\Permission\Traits\Relationship\PermissionRelationship;
 
 /**
  * Class Permission
- * @package App\Models\Access\Permission
+ * @package PaperStore\Models\Access\Permission
  */
 class Permission extends Model
 {
