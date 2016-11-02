@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace PaperStore\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -25,20 +25,20 @@ class RepositoryServiceProvider extends ServiceProvider
     {
         // Product Repository Backend
         $this->app->bind(
-            \App\Repositories\Backend\Product\Contract\ProductRepository::class,
-            \App\Repositories\Backend\Product\Eloquent\ProductRepository::class
+            \PaperStore\Repositories\Backend\Product\Contract\ProductRepository::class,
+            \PaperStore\Repositories\Backend\Product\Eloquent\ProductRepository::class
         );
         
         // Product Size Repository Backend
         $this->app->bind(
-            \App\Repositories\Backend\Product\Contract\ProductSizeRepository::class,
-            \App\Repositories\Backend\Product\Eloquent\ProductSizeRepository::class
+            \PaperStore\Repositories\Backend\Product\Contract\ProductSizeRepository::class,
+            \PaperStore\Repositories\Backend\Product\Eloquent\ProductSizeRepository::class
         );
 
         // Product Category Repository Backend
         $this->app->bind(
-            \App\Repositories\Backend\Product\Contract\ProductCategoryRepository::class,
-            \App\Repositories\Backend\Product\Eloquent\ProductCategoryRepository::class
+            \PaperStore\Repositories\Backend\Product\Contract\ProductCategoryRepository::class,
+            \PaperStore\Repositories\Backend\Product\Eloquent\ProductCategoryRepository::class
         );
     }
 }
