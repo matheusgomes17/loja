@@ -59,17 +59,17 @@ class ProductSizeEventListener
 	public function subscribe($events)
 	{
 		$events->listen(
-			\PaperStore\Events\Backend\Product\ProductSizeCreated::class,
+			\PaperStore\Events\Backend\Product\Size\ProductSizeCreated::class,
 			'PaperStore\Listeners\Backend\Product\ProductSizeEventListener@onCreated'
 		);
 
 		$events->listen(
-			\PaperStore\Events\Backend\Product\ProductSizeUpdated::class,
+			\PaperStore\Events\Backend\Product\Size\ProductSizeUpdated::class,
 			'PaperStore\Listeners\Backend\Product\ProductSizeEventListener@onUpdated'
 		);
 
 		$events->listen(
-			\PaperStore\Events\Backend\Product\ProductSizePermanentlyDeleted::class,
+			\PaperStore\Events\Backend\Product\Size\ProductSizePermanentlyDeleted::class,
 			'PaperStore\Listeners\Backend\Product\ProductSizeEventListener@onPermanentlyDeleted'
 		);
 	}

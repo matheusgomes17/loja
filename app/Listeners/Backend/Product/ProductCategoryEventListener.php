@@ -59,17 +59,17 @@ class ProductCategoryEventListener
 	public function subscribe($events)
 	{
 		$events->listen(
-			\PaperStore\Events\Backend\Product\ProductCategoryCreated::class,
+			\PaperStore\Events\Backend\Product\Category\ProductCategoryCreated::class,
 			'PaperStore\Listeners\Backend\Product\ProductCategoryEventListener@onCreated'
 		);
 
 		$events->listen(
-			\PaperStore\Events\Backend\Product\ProductCategoryUpdated::class,
+			\PaperStore\Events\Backend\Product\Category\ProductCategoryUpdated::class,
 			'PaperStore\Listeners\Backend\Product\ProductCategoryEventListener@onUpdated'
 		);
 
 		$events->listen(
-			\PaperStore\Events\Backend\Product\ProductCategoryPermanentlyDeleted::class,
+			\PaperStore\Events\Backend\Product\Category\ProductCategoryPermanentlyDeleted::class,
 			'PaperStore\Listeners\Backend\Product\ProductCategoryEventListener@onPermanentlyDeleted'
 		);
 	}

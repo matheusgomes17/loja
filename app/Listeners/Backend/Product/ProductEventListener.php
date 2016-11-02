@@ -112,42 +112,42 @@ class ProductEventListener
 	public function subscribe($events)
 	{
 		$events->listen(
-			\PaperStore\Events\Backend\Product\ProductCreated::class,
+			\PaperStore\Events\Backend\Product\Product\ProductCreated::class,
 			'PaperStore\Listeners\Backend\Product\ProductEventListener@onCreated'
 		);
 
 		$events->listen(
-			\PaperStore\Events\Backend\Product\ProductUpdated::class,
+			\PaperStore\Events\Backend\Product\Product\ProductUpdated::class,
 			'PaperStore\Listeners\Backend\Product\ProductEventListener@onUpdated'
 		);
 
 		$events->listen(
-			\PaperStore\Events\Backend\Product\ProductDeleted::class,
+			\PaperStore\Events\Backend\Product\Product\ProductDeleted::class,
 			'PaperStore\Listeners\Backend\Product\ProductEventListener@onDeleted'
 		);
 
 		$events->listen(
-			\PaperStore\Events\Backend\Product\ProductRestored::class,
+			\PaperStore\Events\Backend\Product\Product\ProductRestored::class,
 			'PaperStore\Listeners\Backend\Product\ProductEventListener@onRestored'
 		);
 
 		$events->listen(
-			\PaperStore\Events\Backend\Product\ProductPermanentlyDeleted::class,
+			\PaperStore\Events\Backend\Product\Product\ProductPermanentlyDeleted::class,
 			'PaperStore\Listeners\Backend\Product\ProductEventListener@onPermanentlyDeleted'
 		);
 
 		$events->listen(
-			\PaperStore\Events\Backend\Product\ProductPasswordChanged::class,
+			\PaperStore\Events\Backend\Product\Product\ProductPasswordChanged::class,
 			'PaperStore\Listeners\Backend\Product\ProductEventListener@onPasswordChanged'
 		);
 
 		$events->listen(
-			\PaperStore\Events\Backend\Product\ProductDeactivated::class,
+			\PaperStore\Events\Backend\Product\Product\ProductDeactivated::class,
 			'PaperStore\Listeners\Backend\Product\ProductEventListener@onDeactivated'
 		);
 
 		$events->listen(
-			\PaperStore\Events\Backend\Product\ProductReactivated::class,
+			\PaperStore\Events\Backend\Product\Product\ProductReactivated::class,
 			'PaperStore\Listeners\Backend\Product\ProductEventListener@onReactivated'
 		);
 	}

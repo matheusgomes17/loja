@@ -49,6 +49,11 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         /**
+         * Register Repository Service Provider
+         */
+        $this->app->register(RepositoryServiceProvider::class);
+        
+        /**
          * Sets third party service providers that are only needed on local environments
          */
         if ($this->app->environment() == 'local') {
