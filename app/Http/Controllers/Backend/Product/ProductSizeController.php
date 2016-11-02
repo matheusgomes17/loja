@@ -4,9 +4,8 @@ namespace PaperStore\Http\Controllers\Backend\Product;
 
 use PaperStore\Http\Controllers\Controller;
 use PaperStore\Exceptions\GeneralException;
-use PaperStore\Http\Requests\Backend\Product\ManageProductRequest;
-use PaperStore\Http\Requests\Backend\Product\Size\StoreProductSizeRequest;
-use PaperStore\Http\Requests\Backend\Product\Size\UpdateProductSizeRequest;
+use PaperStore\Http\Requests\Backend\Products\Size\StoreProductSizeRequest;
+use PaperStore\Http\Requests\Backend\Products\Size\UpdateProductSizeRequest;
 use PaperStore\Repositories\Backend\Product\Contract\ProductSizeRepository;
 
 /**

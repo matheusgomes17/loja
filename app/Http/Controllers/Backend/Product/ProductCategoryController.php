@@ -1,11 +1,11 @@
 <?php
 
-namespace PaperStore\Http\Controllers\Backend\Product;
+namespace PaperStore\Http\Controllers\Backend\Products;
 
 use PaperStore\Http\Controllers\Controller;
 use PaperStore\Exceptions\GeneralException;
-use PaperStore\Http\Requests\Backend\Product\StoreProductCategoryRequest;
-use PaperStore\Http\Requests\Backend\Product\UpdateProductCategoryRequest;
+use PaperStore\Http\Requests\Backend\Products\Category\StoreProductCategoryRequest;
+use PaperStore\Http\Requests\Backend\Products\Category\UpdateProductCategoryRequest;
 use PaperStore\Repositories\Backend\Product\Contract\ProductRepository;
 use PaperStore\Repositories\Backend\Product\Contract\ProductCategoryRepository;
 
