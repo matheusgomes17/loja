@@ -38,7 +38,7 @@ class PermissionTableSeeder extends Seeder
         $permission_model          = config('access.permission');
         $viewBackend               = new $permission_model;
         $viewBackend->name         = 'view-backend';
-        $viewBackend->display_name = 'View Backend';
+        $viewBackend->display_name = 'Ver Backend';
         $viewBackend->sort         = 1;
         $viewBackend->created_at   = Carbon::now();
         $viewBackend->updated_at   = Carbon::now();
@@ -47,23 +47,47 @@ class PermissionTableSeeder extends Seeder
         /**
          * Access Permissions
          */
-        $permission_model          = config('access.permission');
-        $manageUsers               = new $permission_model;
-        $manageUsers->name         = 'manage-users';
-        $manageUsers->display_name = 'Manage Users';
-        $manageUsers->sort         = 2;
-        $manageUsers->created_at   = Carbon::now();
-        $manageUsers->updated_at   = Carbon::now();
+        $permission_model            = config('access.permission');
+        $manageUsers                 = new $permission_model;
+        $manageUsers->name           = 'manage-users';
+        $manageUsers->display_name   = 'Gerenciar Usuários';
+        $manageUsers->sort           = 2;
+        $manageUsers->created_at     = Carbon::now();
+        $manageUsers->updated_at     = Carbon::now();
         $manageUsers->save();
 
-        $permission_model          = config('access.permission');
-        $manageRoles               = new $permission_model;
-        $manageRoles->name         = 'manage-roles';
-        $manageRoles->display_name = 'Manage Roles';
-        $manageRoles->sort         = 3;
-        $manageRoles->created_at   = Carbon::now();
-        $manageRoles->updated_at   = Carbon::now();
+        $permission_model            = config('access.permission');
+        $manageRoles                 = new $permission_model;
+        $manageRoles->name           = 'manage-roles';
+        $manageRoles->display_name   = 'Gerenciar Funções';
+        $manageRoles->sort           = 3;
+        $manageRoles->created_at     = Carbon::now();
+        $manageRoles->updated_at     = Carbon::now();
         $manageRoles->save();
+
+        /**
+         * Products Permissions
+         */
+        $permission_model            = config('access.permission');
+        $manageProduct               = new $permission_model;
+        $manageProduct->name         = 'manage-products';
+        $manageProduct->display_name = 'Gerenciar Produtos';
+        $manageProduct->sort         = 4;
+        $manageProduct->created_at   = Carbon::now();
+        $manageProduct->updated_at   = Carbon::now();
+        $manageProduct->save();
+
+        /**
+         * Budgets Permissions
+         */
+        $permission_model            = config('access.permission');
+        $manageBudged                = new $permission_model;
+        $manageBudged->name          = 'manage-budgets';
+        $manageBudged->display_name  = 'Gerenciar Orçamentos';
+        $manageBudged->sort          = 5;
+        $manageBudged->created_at    = Carbon::now();
+        $manageBudged->updated_at    = Carbon::now();
+        $manageBudged->save();
 
         if (DB::connection()->getDriverName() == 'mysql') {
             DB::statement('SET FOREIGN_KEY_CHECKS=1;');

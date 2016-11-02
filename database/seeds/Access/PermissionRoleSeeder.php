@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\Access\Role\Role;
+use PaperStore\Models\Access\Role\Role;
 use Illuminate\Support\Facades\DB;
 
 /**
@@ -25,12 +25,9 @@ class PermissionRoleSeeder extends Seeder
 		}
 
 		/**
-		 * Assign view backend and manage user permissions to executive role as example
+		 * Atribui permissão 1 (ver backend) e 4 (produtos) para Gerente
 		 */
-		Role::find(2)->permissions()->sync([1, 2]);
-		/**
-		 * 
-		 */
+		Role::find(2)->permissions()->sync([1, 4]);
 
 		if (DB::connection()->getDriverName() == 'mysql') {
 			DB::statement('SET FOREIGN_KEY_CHECKS=1;');
