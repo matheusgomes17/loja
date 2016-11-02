@@ -1,41 +1,27 @@
 <?php
 
-namespace App\Models\Product;
+namespace PaperStore\Models\Product;
 
-use App\Models\Access\User\User;
-use App\Models\Product\Size\Size;
-use App\Models\Product\Category\Category;
+use PaperStore\Models\Access\User\User;
+use PaperStore\Models\Product\Size;
+use PaperStore\Models\Product\Category;
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Product
- * package App
+ * package PaperStore
  */
 class Product extends Model {
 
     /**
-     * The database table used by the model.
-     *
      * @var string
      */
     protected $table = 'products';
 
     /**
-     * The attributes that are mass assignable.
-     *
      * @var array
      */
-    protected $fillable = [
-        'user_id',
-        'category_id',
-        'name',
-        'slug',
-        'cover',
-        'cod',
-        'price',
-        'description',
-        'qtd'
-    ];
+    protected $fillable = ['user_id', 'category_id', 'name', 'cover', 'cod', 'price', 'description', 'qtd'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\hasOne
@@ -59,14 +45,16 @@ class Product extends Model {
     }
 
     /**
-     * 
+     * Retorna o nome do produto
+     * @return string
      */
     public function getName() {
         return ucfirst($this->attributes['name']);
     }
 
     /**
-     * 
+     * Retorna o codigo de identificacao do produto
+     * @return string
      */
     public function getCod() {
         return strtoupper($this->attributes['cod']);
@@ -74,27 +62,31 @@ class Product extends Model {
 
     /**
      * 
+     * @return string
      */
     public function getCategory() {
         //
     }
 
     /**
-     * 
+     * Retorna o preco do produto
+     * @return string
      */
     public function getPrice() {
         return 'R$ ' . number_format($this->attributes['price'], 2, ',', '.');
     }
 
     /**
-     * 
+     * Retorna a data de quanto o registro foi criado
+     * @return string
      */
     public function getCreated() {
         return date('d/m/Y', strtotime($this->attributes['created_at']));
     }
 
     /**
-     * 
+     * Retorna a data de quanto o registro foi alterado
+     * @return string
      */
     public function getUpdated() {
         return date('d/m/Y H:i', strtotime($this->attributes['updated_at']));

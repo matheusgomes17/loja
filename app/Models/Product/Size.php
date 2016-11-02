@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Models\Product\Size;
+namespace PaperStore\Models\Product;
 
-use App\Models\Product\Product;
+use PaperStore\Models\Product\Product;
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Size
- * package App
+ * package PaperStore
  */
 class Size extends Model {
 
@@ -22,90 +22,81 @@ class Size extends Model {
     ];
 
     /**
-     * The database table used by the model.
-     *
      * @var string
      */
-    protected $table = 'product_size';
+    protected $table = 'products_sizes';
 
     /**
-     * The attributes that are mass assignable.
-     *
      * @var array
      */
-    protected $fillable = ['product_id', 'rgt', 'lft', 'type'];
+    protected $fillable = ['product_id', 'width', 'height', 'type'];
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\hasMany
+     * @return \Illuminate\Database\Eloquent\Relations\belongsToMany
      */
     public function product() {
         return $this->belongsToMany(Product::class, 'product_size_pivot', 'id', 'product_id');
     }
 
     /**
-     * 
+     * Retorna a largura com a altura da medida
+     * @return string
      */
     public function getName() {
-        return $this->getRgt() . 'x' . $this->getLft();
+        return $this->getWidth().'x'.$this->getHeight();
     }
 
     /**
-     * 
+     * Retorna o tipo da medida
+     * @return string
      */
     public function getType() {
         switch ($this->attributes['type']) {
-            case 'm':
-                return 'Metros';
-                break;
-            case 'dm':
-                return 'Decímetros';
-                break;
-            case 'cm':
-                return 'Centímetros';
-                break;
-            case 'mm':
-                return 'Milímitros';
-                break;
-        default:
-            return 'Não definido';
-            break;
+            case 'm': return 'Metros'; break;
+            case 'dm': return 'Decímetros'; break;
+            case 'cm': return 'Centímetros'; break;
+            case 'mm': return 'Milímitros'; break;
+        default: return 'Não definido'; break;
         }
     }
 
     /**
-     * 
+     * Retorna a largura da medida
+     * @return string
      */
-    public function getRgt() {
-        return $this->attributes['rgt'];
+    public function getWidth() {
+        return $this->attributes['width'];
     }
 
     /**
-     * 
+     * Retorna a altura da medida
+     * @return string
      */
-    public function getLft() {
-        return $this->attributes['lft'];
+    public function getHeight() {
+        return $this->attributes['height'];
     }
 
     /**
-     * 
+     * Retorna a data de quanto o registro foi criado
+     * @return string
      */
-    public function getCreated() {
+    public function getCreated(){
         return date('d/m/Y H:i', strtotime($this->attributes['created_at']));
     }
 
     /**
-     * 
+     * Retorna a data de quanto o registro foi alterado
+     * @return string
      */
     public function getUpdated() {
         return date('d/m/Y H:i', strtotime($this->attributes['updated_at']));
     }
     
     /**
-     * 
+     * Retorna o tipo da medida
+     * @return array
      */
-    public function getSize()
-    {
+    public function getSize() {
         return $this->size;
     }
-
 }
