@@ -28,6 +28,29 @@ return [
             'restored'            => 'O usuário foi restaurado com sucesso.',
             'updated'             => 'O usuário foi atualizado com sucesso.',
             'updated_password'    => "A senha do usuário foi atualizada com sucesso.",
-        ]
+        ],
+
+        'products' => [
+            'created' => 'O produto foi criado com sucesso.',
+            'updated' => 'O produto foi atualizado com sucesso.',
+            'deleted' => 'O produto foi excluído com sucesso.',
+
+            'sizes' => [
+                'created' => 'A medida do produto foi criada com sucesso.',
+                'updated' => 'A medida do produto foi atualizada com sucesso.',
+                'deleted' => 'A medida do produto foi excluída com sucesso.',
+            ],
+
+            'categories' => [
+                'created' => 'A categoria do produto foi criada com sucesso.',
+                'updated' => 'A categoria do produto foi atualizada com sucesso.',
+                'deleted' => 'A categoria do produto foi excluída com sucesso.',
+            ],
+        ],
+    ],
+
+    'frontend' => [
+        'currently-logged' => 'Você está logado como',
+        're-login' => 'Relogar como',
     ],
 ];

@@ -14,6 +14,31 @@ return [
     */
 
     'backend' => [
+
+        'products' => [
+            'main' => 'Produtos',
+            'title' => 'Gerenciamento de Produtos',
+            'all' => 'Todos os Produtos',
+            'create' => 'Criar Produto',
+            'edit' => 'Editar Produto',
+            'deactivated' => 'Desativar Produtos',
+            'deleted' => 'Excluir Produtos',
+
+            'size' => [
+                'main' => 'Medidas',
+                'all' => 'Todas as Medidas',
+                'create' => 'Criar Medida',
+                'edit' => 'Editar Medida',
+            ],
+
+            'category' => [
+                'main' => 'Categorias',
+                'all' => 'Todas as Categorias',
+                'create' => 'Criar Categoria',
+                'edit' => 'Editar Categoria',
+            ]
+        ],
+
         'access' => [
             'title' => 'Gerenciamento de Usuários',
 

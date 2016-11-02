@@ -34,6 +34,12 @@
                 {{ link_to_route('admin.dashboard', trans('menus.backend.sidebar.dashboard')) }}
             </li>
 
+            @permission('manage-products')
+            <li class="{{ Active::pattern('admin/product/*') }}">
+                {{ link_to_route('admin.product.index', trans('menus.backend.products.title')) }}
+            </li>
+            @endauth
+
             @permission('manage-users')
                 <li class="{{ Active::pattern('admin/access/*') }}">
                     {{ link_to_route('admin.access.user.index', trans('menus.backend.access.title')) }}

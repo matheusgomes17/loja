@@ -41,6 +41,29 @@ return [
                 'update_password_error' => 'Houve um problema ao alterar a senha do usuário. Por favor, tente novamente.',
             ],
         ],
+
+        'products' => [
+            'create_error' => 'Houve um problema ao criar esse produto. Por favor, tente novamente.',
+            'update_error' => 'Houve um problema ao atualizar este produto. Por favor, tente novamente.',
+            'delete_error' => 'Houve um problema ao excluir este produto. Por favor, tente novamente.',
+            'belongs_user' => 'Este produto não pertence ao seu usuário!',
+            'category_error' => 'Não existem categorias cadastradas',
+
+            'sizes' => [
+                'create_error' => 'Houve um problema ao criar a medida deste produto. Por favor, tente novamente.',
+                'update_error' => 'Houve um problema ao atualizar a medida deste produto. Por favor, tente novamente.',
+                'delete_error' => 'Houve um problema ao excluir a medida deste produto. Por favor, tente novamente.',
+            ],
+
+            'categories' => [
+                'create_error' => 'Houve um problema ao criar a categoria deste produto. Por favor, tente novamente.',
+                'update_error' => 'Houve um problema ao atualizar a categoria deste produto. Por favor, tente novamente.',
+                'delete_error' => 'Houve um problema ao excluir a categoria deste produto. Por favor, tente novamente.',
+                'have_products' => 'Você não pode excluir uma categoria que esteja atribuída a um produto.',
+                'parent_error' => 'Não é possível excluir uma categoria principal que tenha outras categorias atribuídas a ela.',
+                'main' => 'Categoria Principal',
+            ],
+        ],
     ],
 
     'frontend' => [

@@ -1,17 +1,16 @@
 <?php
 
 return [
-
     /*
-    |--------------------------------------------------------------------------
-    | Strings Language Lines
-    |--------------------------------------------------------------------------
-    |
-    | The following language lines are used in strings throughout the system.
-    | Regardless where it is placed, a string can be listed here so it is easily
-    | found in a intuitive way.
-    |
-    */
+      |--------------------------------------------------------------------------
+      | Strings Language Lines
+      |--------------------------------------------------------------------------
+      |
+      | The following language lines are used in strings throughout the system.
+      | Regardless where it is placed, a string can be listed here so it is easily
+      | found in a intuitive way.
+      |
+     */
 
     'backend' => [
         'access' => [
@@ -21,12 +20,10 @@ return [
                 'restore_user_confirm' => 'Restaurar esse usuário ao seu estado original?',
             ],
         ],
-
         'dashboard' => [
             'title' => 'Painel de Controle Administrativo',
             'welcome' => 'Bem-vindo',
         ],
-
         'general' => [
             'all_rights_reserved' => 'Todos os direitos reservados.',
             'are_you_sure' => 'Tem certeza?',
@@ -36,18 +33,15 @@ return [
             'minutes' => ' minutes',
             'search_placeholder' => 'Buscar...',
             'timeout' => 'You were automatically logged out for security reasons since you had no activity in ',
-            
             'see_all' => [
                 'messages' => 'Ver todas as mensagens',
                 'notifications' => 'Ver todas as notificações',
                 'tasks' => 'Ver todas as tarefas',
             ],
-
             'status' => [
                 'online' => 'Online',
                 'offline' => 'Offline',
             ],
-
             'you_have' => [
                 'messages' => '{0} Você não tem mensagens|{1} Você tem 1 mensagem|[2,Inf] Você tem :number mensagens',
                 'notifications' => '{0} Você não tem notificações|{1} Você tem 1 notificação|[2,Inf] Você tem :number notificações',
@@ -55,53 +49,42 @@ return [
             ],
         ],
     ],
-
     'emails' => [
         'auth' => [
             'password_reset_subject' => 'Seu link para redefinição de senha',
             'reset_password' => 'Clique aqui para redefinir sua senha',
         ],
     ],
-
     'frontend' => [
         'email' => [
             'confirm_account' => 'Clique aqui para confirmar a sua conta:',
         ],
-
         'test' => 'Teste',
-
         'tests' => [
             'based_on' => [
                 'permission' => 'Baseado na Permissão do Usuário - ',
                 'role' => 'Baseado no Papel do Usuário - ',
             ],
-
             'js_injected_from_controller' => 'Javascript Injetado de um Controller',
-
             'using_blade_extensions' => 'Usando as Extensões Blade',
-
             'using_access_helper' => [
-                'array_permissions'          => 'Usando o "Access Helper" com um Array de Nomes de Permissões ou ID\'s onde o usuário precisa satisfazer ambas as condições.',
-                'array_permissions_not'      => 'Usando o "Access Helper" com um Array de Nomes de Permissões ou ID\'s onde o usuário não precisa satisfazer ambas as condições.',
-                'array_roles'                => 'Usando o "Access Helper" com um Array de Nomes de Papéis ou ID\'s onde o usuário precisa satisfazer ambas as condições.',
-                'array_roles_not'            => 'Usando o "Access Helper" com um Array de Nomes de Papéis ou ID\'s onde o usuário não precisa satisfazer ambas as condições.',
-                'permission_id'              => 'Usando o "Access Helper" com o ID da Permissão',
-                'permission_name'            => 'Usando o "Access Helper" com o Nome da Permissão',
-                'role_id'                    => 'Usando o "Access Helper" com o ID do Papel',
-                'role_name'                  => 'Usando o "Access Helper" com o Nome do Papel',
-                
+                'array_permissions' => 'Usando o "Access Helper" com um Array de Nomes de Permissões ou ID\'s onde o usuário precisa satisfazer ambas as condições.',
+                'array_permissions_not' => 'Usando o "Access Helper" com um Array de Nomes de Permissões ou ID\'s onde o usuário não precisa satisfazer ambas as condições.',
+                'array_roles' => 'Usando o "Access Helper" com um Array de Nomes de Papéis ou ID\'s onde o usuário precisa satisfazer ambas as condições.',
+                'array_roles_not' => 'Usando o "Access Helper" com um Array de Nomes de Papéis ou ID\'s onde o usuário não precisa satisfazer ambas as condições.',
+                'permission_id' => 'Usando o "Access Helper" com o ID da Permissão',
+                'permission_name' => 'Usando o "Access Helper" com o Nome da Permissão',
+                'role_id' => 'Usando o "Access Helper" com o ID do Papel',
+                'role_name' => 'Usando o "Access Helper" com o Nome do Papel',
             ],
-
             'view_console_it_works' => 'Veja o console, você deverá ver a mensagem \'it works!\' que está vindo de FrontendController@index',
             'you_can_see_because' => 'Você pode ver isto porque você tem o papel de \':role\'!',
             'you_can_see_because_permission' => 'Você pode ver isto porque você tem a permissão de \':permission\'!',
         ],
-
         'user' => [
             'profile_updated' => 'Perfil atualizado com sucesso.',
             'password_updated' => 'Senha atualizada com sucesso.',
         ],
-
         'welcome_to' => 'Bem-vindo a :place',
     ],
 ];
